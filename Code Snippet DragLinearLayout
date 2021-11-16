@@ -1,0 +1,7 @@
+val dragLayout: DragLinearLayout = findViewById(R.id.container) // give your DragLinearLayout id as container
+        var i = 0
+        while(i < dragLayout.childCount) {
+            val child = dragLayout.getChildAt(i)
+            dragLayout.setViewDraggable(child,child)
+            i++
+        }
